@@ -1,0 +1,34 @@
+Exercise 6 is completed in Digits.
+
+
+1.
+A: num0A, _num0A, num0A_, a0NUM.
+In Java, all identifiers must begin with a letter, an underscore, or a Unicode currency character. 
+B: geek@, #2num, cronk#, *uk5,
+Any other symbol, such as a number, is not valid. Furthermore, an identifier cannot have the same spelling as one of Java's reserved words.
+
+2.
+A: 
+  int numBeads;
+  int numBeads = 5; 
+B:
+  int numBeads = 5; 
+  
+3.
+A: 13
+B: 11
+
+4.
+A: int
+B: float
+C: int
+D: int
+E: boolean
+F: char
+
+5.
+A: Primitive data types are those supported directly by the language and are not composed of any other data types, Kind of like they are atomic that way,
+The language has support for operations on those data types already, Abstract data types are created by users, and in libraries.
+
+B:A class is a blueprint from which you can create the instance, i.e., objects,
+An object is the instance of the class, which helps programmers to use variables and methods from inside the class.

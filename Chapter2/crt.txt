@@ -1,0 +1,14 @@
+3.
+TestAverages.java
+A java application to calculate test averages.
+@author
+Course
+Date
+4.
+The CTA class displays the average set of scores.
+5.
+package gradeCalculator; // package testAveragesCalculator;
+6.
+public class AverageScore { // public class CTA {
+
+YEET
