@@ -21,11 +21,11 @@ public class Hurricane {
 	{
 		
 		System.out.println("Hello and welcome to Rowan's Hurricane speed Program.");
-        TimeUnit.SECONDS.sleep(0);
+        TimeUnit.SECONDS.sleep(5);
         System.out.println("MPH is Miles Per Hour. KTS is Knots. and KM/HR is Kilometter Per Hour");
-        TimeUnit.SECONDS.sleep(0);
+        TimeUnit.SECONDS.sleep(5);
         System.out.println("What is the Category of the Hurricane");
-        TimeUnit.SECONDS.sleep(0);
+        TimeUnit.SECONDS.sleep(5);
         
 		Scanner scanh = new Scanner(System.in);
 		
@@ -67,7 +67,7 @@ public class Hurricane {
 		    break;
 		}
 		
-		TimeUnit.SECONDS.sleep(0);
+		TimeUnit.SECONDS.sleep(5);
     	System.out.println("Program Finished, Thank you for using this Program.");
 	}
 
