@@ -82,55 +82,60 @@ public class Exercise2 {
 
 /* Screen Dump
 
-Hello and welcome to Rowan's Hurricane speed Program.
-MPH is Miles Per Hour. KTS is Knots. and KM/HR is Kilometter Per Hour
-What is the Category of the Hurricane
-1
-Category 1
-MPH 74-95
-KTS 64-82
-KM/HR 119-153
+Hello and welcome to Rowan's Package Check application
+First enter the Package weight
+Then enter the Package Dimensions
+Weight in Kilograms: 
+28
+length in centimeters:
+100
+width in centimeters:
+100
+height in centimeters:
+100
+The Package is too Large and Heavy
 Program Finished, Thank you for using this Program.
 
-Hello and welcome to Rowan's Hurricane speed Program.
-MPH is Miles Per Hour. KTS is Knots. and KM/HR is Kilometter Per Hour
-What is the Category of the Hurricane
-2
-Category 2
-MPH 96-110
-KTS 83-95
-KM/HR 178-209
+Hello and welcome to Rowan's Package Check application
+First enter the Package weight
+Then enter the Package Dimensions
+Weight in Kilograms: 
+10
+length in centimeters:
+100
+width in centimeters:
+100
+height in centimeters:
+100
+The Package is too Large
 Program Finished, Thank you for using this Program.
 
-Hello and welcome to Rowan's Hurricane speed Program.
-MPH is Miles Per Hour. KTS is Knots. and KM/HR is Kilometter Per Hour
-What is the Category of the Hurricane
-3
-Category 3
-MPH 111-130
-KTS 96-113
-KM/HR 178-209
+Hello and welcome to Rowan's Package Check application
+First enter the Package weight
+Then enter the Package Dimensions
+Weight in Kilograms: 
+28
+length in centimeters:
+10
+width in centimeters:
+10
+height in centimeters:
+10
+The Package is too Heavy
 Program Finished, Thank you for using this Program.
 
-Hello and welcome to Rowan's Hurricane speed Program.
-MPH is Miles Per Hour. KTS is Knots. and KM/HR is Kilometter Per Hour
-What is the Category of the Hurricane
-4
-Category 4
-MPH 131-155
-KTS 114-135
-KM/HR 210-249
-Program Finished, Thank you for using this Program.
-
-Hello and welcome to Rowan's Hurricane speed Program.
-MPH is Miles Per Hour. KTS is Knots. and KM/HR is Kilometter Per Hour
-What is the Category of the Hurricane
-5
-Category 5
-All Category 5's are greater than
-MPH 155
-KTS 135
-KM/HR 249
+Hello and welcome to Rowan's Package Check application
+First enter the Package weight
+Then enter the Package Dimensions
+Weight in Kilograms: 
+10
+length in centimeters:
+10
+width in centimeters:
+10
+height in centimeters:
+10
+The Package is just fine
 Program Finished, Thank you for using this Program.
 
 */
