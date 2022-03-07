@@ -1,2 +1,6 @@
 Do Exercise 2 Pg. 93
+
+        length * width * height > 1000000
+
+
 Do Exercise 8 Pg. 95
