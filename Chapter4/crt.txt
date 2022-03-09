@@ -1,0 +1,35 @@
+1.
+A:
+		System.out.println("Grade: ");
+		Scanner scanGrade = new Scanner(System.in);
+		int grade = scanGrade.nextInt();
+		
+		if (grade >= 90) 
+		{
+  			System.out.println("Great job! [Grade: " + grade + "]");
+		} 
+		
+B:
+		System.out.println("Grade: ");
+		Scanner scanGrade = new Scanner(System.in);
+		int grade = scanGrade.nextInt();
+				
+		if (grade < 20 || grade > 20 ) 
+		{
+	      System.out.println("Error");
+		} 
+		
+C:
+		System.out.println("Number: ");
+		Scanner scanNumber = new Scanner(System.in);
+		int number = scanNumber.nextInt();
+		
+		int plus = 2
+		
+		if (number <= 100 ) 
+		{
+	      int output1 = number + 2
+	      System.out.println("Number + 2 = " + output1);
+		} 
+		
+2.
