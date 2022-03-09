@@ -3,10 +3,9 @@ import java.util.concurrent.TimeUnit;
 
 /*
 
-Program: Hurricane.java          Last Date of this Revision: 03, 3, 2022
+Program: Exercise8.java          Last Date of this Revision: 03, 9, 2022
 
-Purpose: Create a Hurricane application that displays the wind speed for the hurricane category entered by the user.
-		 Display the speed in MPH, KTS, and KM/HR.
+Purpose: Create a RandomGenerator application that implements the Linear Congruential Method.
 
 Author: Rowan Sallay, 
 School: CHHS
@@ -22,29 +21,59 @@ public class Exercise8 {
 	public static void main(String[] args) throws InterruptedException
 	{
 		
-		System.out.println("Hello and welcome to Rowan's RandomNum application");
-        TimeUnit.SECONDS.sleep(5);
-        System.out.println("First enter a Minimum Value and then enter a Maximum Value.");
-        TimeUnit.SECONDS.sleep(5);
+		System.out.println("Hello and welcome to Rowan's Linear Congruential Method application");
+        TimeUnit.SECONDS.sleep(3);
+        System.out.println("First enter a Seed Value and then enter Values for A, C and M");
+        TimeUnit.SECONDS.sleep(3);
         
-        System.out.println("Minimum value: ");
-        TimeUnit.SECONDS.sleep(5);
-		Scanner scanmin = new Scanner(System.in);
-		int min = scanmin.nextInt();
+        System.out.println("Seed: ");
+        TimeUnit.SECONDS.sleep(2);
+		Scanner scanseed = new Scanner(System.in);
+		int seed = scanseed.nextInt();
         
-        System.out.println("Maximum value:");
-        TimeUnit.SECONDS.sleep(5);
-		Scanner scanmax = new Scanner(System.in);
-        int max = scanmax.nextInt();
+        System.out.println("Value A:");
+        TimeUnit.SECONDS.sleep(2);
+		Scanner scanA = new Scanner(System.in);
+        int lcmA = scanA.nextInt();
         
-        scanmin.close();
-        scanmax.close();
+        System.out.println("Value C:");
+        TimeUnit.SECONDS.sleep(2);
+		Scanner scanC = new Scanner(System.in);
+        int lcmC = scanC.nextInt();
         
-        int a = (int) ((Math.random() * (max - min)) + min);
+        System.out.println("Value M:");
+        TimeUnit.SECONDS.sleep(2);
+		Scanner scanM = new Scanner(System.in);
+        int lcmM = scanM.nextInt();
         
-        System.out.println("Random Number is: " + a);
+        scanseed.close();
+        scanA.close();
+        scanC.close();
+        scanM.close();
+        
+        int output1 = (lcmA * seed+lcmC) % lcmM;
+        int output2 = (lcmA * output1+lcmC) % lcmM;
+        int output3 = (lcmA * output2+lcmC) % lcmM;
+        int output4 = (lcmA * output3+lcmC) % lcmM;
+        int output5 = (lcmA * output4+lcmC) % lcmM;
+        int output6 = (lcmA * output5+lcmC) % lcmM;
+        int output7 = (lcmA * output6+lcmC) % lcmM;
+        int output8 = (lcmA * output7+lcmC) % lcmM;
+        int output9 = (lcmA * output8+lcmC) % lcmM;
+        int output10 = (lcmA * output9+lcmC) % lcmM;
+           
+        System.out.println("("+lcmA+"*"+seed+"+"+lcmC+")"+" ÷ "+lcmM+" = "+output1);
+        System.out.println("("+lcmA+"*"+output1+"+"+lcmC+")"+" ÷ "+lcmM+" = "+output2);
+        System.out.println("("+lcmA+"*"+output2+"+"+lcmC+")"+" ÷ "+lcmM+" = "+output3);
+        System.out.println("("+lcmA+"*"+output3+"+"+lcmC+")"+" ÷ "+lcmM+" = "+output4);
+        System.out.println("("+lcmA+"*"+output4+"+"+lcmC+")"+" ÷ "+lcmM+" = "+output5);
+        System.out.println("("+lcmA+"*"+output5+"+"+lcmC+")"+" ÷ "+lcmM+" = "+output6);
+        System.out.println("("+lcmA+"*"+output6+"+"+lcmC+")"+" ÷ "+lcmM+" = "+output7);
+        System.out.println("("+lcmA+"*"+output7+"+"+lcmC+")"+" ÷ "+lcmM+" = "+output8);
+        System.out.println("("+lcmA+"*"+output8+"+"+lcmC+")"+" ÷ "+lcmM+" = "+output9);
+        System.out.println("("+lcmA+"*"+output9+"+"+lcmC+")"+" ÷ "+lcmM+" = "+output10);
 		
-		TimeUnit.SECONDS.sleep(5);
+		TimeUnit.SECONDS.sleep(3);
     	System.out.println("Program Finished, Thank you for using this Program.");
 
 	}
@@ -53,55 +82,26 @@ public class Exercise8 {
 
 /* Screen Dump
 
-Hello and welcome to Rowan's Hurricane speed Program.
-MPH is Miles Per Hour. KTS is Knots. and KM/HR is Kilometter Per Hour
-What is the Category of the Hurricane
-1
-Category 1
-MPH 74-95
-KTS 64-82
-KM/HR 119-153
-Program Finished, Thank you for using this Program.
-
-Hello and welcome to Rowan's Hurricane speed Program.
-MPH is Miles Per Hour. KTS is Knots. and KM/HR is Kilometter Per Hour
-What is the Category of the Hurricane
-2
-Category 2
-MPH 96-110
-KTS 83-95
-KM/HR 178-209
-Program Finished, Thank you for using this Program.
-
-Hello and welcome to Rowan's Hurricane speed Program.
-MPH is Miles Per Hour. KTS is Knots. and KM/HR is Kilometter Per Hour
-What is the Category of the Hurricane
-3
-Category 3
-MPH 111-130
-KTS 96-113
-KM/HR 178-209
-Program Finished, Thank you for using this Program.
-
-Hello and welcome to Rowan's Hurricane speed Program.
-MPH is Miles Per Hour. KTS is Knots. and KM/HR is Kilometter Per Hour
-What is the Category of the Hurricane
-4
-Category 4
-MPH 131-155
-KTS 114-135
-KM/HR 210-249
-Program Finished, Thank you for using this Program.
-
-Hello and welcome to Rowan's Hurricane speed Program.
-MPH is Miles Per Hour. KTS is Knots. and KM/HR is Kilometter Per Hour
-What is the Category of the Hurricane
-5
-Category 5
-All Category 5's are greater than
-MPH 155
-KTS 135
-KM/HR 249
+Hello and welcome to Rowan's Linear Congruential Method application
+First enter a Seed Value and then enter Values for A, C and M
+Seed: 
+17
+Value A:
+4359
+Value C:
+68
+Value M:
+21
+(4359*17+68) ÷ 21 = 20
+(4359*20+68) ÷ 21 = 14
+(4359*14+68) ÷ 21 = 5
+(4359*5+68) ÷ 21 = 2
+(4359*2+68) ÷ 21 = 8
+(4359*8+68) ÷ 21 = 17
+(4359*17+68) ÷ 21 = 20
+(4359*20+68) ÷ 21 = 14
+(4359*14+68) ÷ 21 = 5
+(4359*5+68) ÷ 21 = 2
 Program Finished, Thank you for using this Program.
 
 */
