@@ -33,3 +33,27 @@ C:
 		} 
 		
 2.
+
+		System.out.println("Value One: ");
+		Scanner scanNumberO = new Scanner(System.in);
+		int numberO = scanNumberO.nextInt();
+		
+		System.out.println("Value Two: ");
+		Scanner scanNumberT = new Scanner(System.in);
+		int numberT = scanNumberT.nextInt();
+		
+		
+		if (numberO > numberT ) 
+		{
+	      System.out.println("First Value is Larger");
+		} 
+		else if (numberO < numberT ) 
+		{
+	      System.out.println("Second Value is Larger");
+		} 
+		else (numberO == numberT ) 
+		{
+	      System.out.println("Values are Equal");
+		} 
+
+CRT unfinished still working on it saving work.
