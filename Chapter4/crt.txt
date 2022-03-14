@@ -56,4 +56,32 @@ C:
 	      System.out.println("Values are Equal");
 		} 
 
+3.
+A:
+  		int num = 4;
+  
+    if (num % 2 == 0)
+    {
+      System.out.println("even"); // obviously
+    }  
+    else
+    {
+      System.out.println("odd"); // obviously
+    }  
+    
+    4 = even, 5 = odd;
+    
+B:
+  		int num = 4;
+		
+	    switch (num%2)
+	    {
+	    case 0:
+	    	System.out.println("even"); // obviously;
+	    break;
+	    default:
+	    	System.out.println("odd"); // obviously
+    
+    4 = even, 5 = odd;
+
 CRT unfinished still working on it saving work.
