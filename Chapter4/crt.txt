@@ -84,4 +84,35 @@ B:
     
     4 = even, 5 = odd;
 
+4.
+
+A:
+
+	int max = 50;
+
+	int min = 1;
+
+	int a = (int) ((Math.random() * (max - min)) + min);
+
+	System.out.println("Number " + a);
+
+B:
+
+	int max = 100;
+
+	int min = 20;
+
+	int a = (int) ((Math.random() * (max - min)) + min);
+
+	System.out.println("Number " + a);
+
+C:
+    int max = 100;
+
+    int min = 20;
+
+    double a = (int) ((Math.random() * (max - min)) + min);
+
+     System.out.println("Double " + a);
+
 CRT unfinished still working on it saving work.
