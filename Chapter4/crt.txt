@@ -111,7 +111,7 @@ C:
 
     int min = 20;
 
-    double a = (int) ((Math.random() * (max - min)) + min);
+    double a = (int) ((Math.random() * (max - min)));
 
      System.out.println("Double " + a);
 
