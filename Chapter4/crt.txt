@@ -130,4 +130,14 @@ C:
 		System.out.println("senior");
 	}
 	
+6.
+
+A: False
+B: False
+C: False
+D: False
+E: False
+F: False
+G: False
+
 CRT unfinished still working on it saving work.
