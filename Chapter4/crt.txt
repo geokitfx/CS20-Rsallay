@@ -115,4 +115,19 @@ C:
 
      System.out.println("Double " + a);
 
+5.
+
+	if (age < 18) 
+	{
+		System.out.println("child");
+	} 
+	else if (age [ > | Replace with | >= ] 18 && age [ < | Replace with | <= ] 65) 
+	{
+		System.out.println("adult");
+	} 
+	[ else if (age > 65) | Replace with | else ]
+	{
+		System.out.println("senior");
+	}
+	
 CRT unfinished still working on it saving work.
