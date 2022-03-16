@@ -132,12 +132,12 @@ C:
 	
 6.
 
-A: False
+A: True
 B: False
 C: False
 D: False
 E: False
 F: False
-G: False
+G: True
 
-CRT unfinished still working on it saving work.
+Done.
