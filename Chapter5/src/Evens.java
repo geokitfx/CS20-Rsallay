@@ -16,7 +16,7 @@ public class Evens {
 	public static void main(String[] args) 
 	{
         
-		int min = 2;
+		int min = 1;
 		int max = 20;
 		int increment = 2;
         
