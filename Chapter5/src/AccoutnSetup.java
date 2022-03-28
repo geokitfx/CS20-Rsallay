@@ -3,7 +3,7 @@ import java.util.concurrent.TimeUnit;
 
 /*
 
-Program: OddSum.java          Last Date of this Revision: 03, 18, 2022
+Program: AccoutnSetup.java          Last Date of this Revision: 03, 18, 2022
 
 Purpose: Create an OddSum application that prompts the user for a number
  		 and then sums the odd numbers from 1 to the number entered.
@@ -19,11 +19,15 @@ public class AccoutnSetup {
 
 	public static void main(String[] args) throws InterruptedException
 	{
-		System.out.println("Hello and welcome to Rowan's Numbers Sum application");
+		System.out.println("Hello and welcome to Rowan's Accout Setup application");
         TimeUnit.SECONDS.sleep(2);
-        System.out.println("First enter the max value");
+        System.out.println("Enter a username: ");
         TimeUnit.SECONDS.sleep(2);
-        System.out.println("Then let the Program work");
+        
+        String userName = myObj.nextLine();
+        
+        
+        System.out.println("");
         TimeUnit.SECONDS.sleep(2);
         
         System.out.println("Max value: ");
