@@ -95,7 +95,7 @@ public class EX6 {
         	System.out.println("Something went wronng");
         }
         
-        TimeUnit.SECONDS.sleep(3);
+        TimeUnit.SECONDS.sleep(2);
     	System.out.println("Program Finished, Thank you for using this Program.");
     		
         }
