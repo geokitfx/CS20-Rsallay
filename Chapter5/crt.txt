@@ -31,3 +31,7 @@ It will continue to add 2 to the value of x until x is equal to or greater than 
 
 6.
 Any value equal to or under 119.
+
+7.
+And accumulator is a variable that is incremented by varying amounts,
+For an example, X increase's I by 10 when the code is executed, while Y increase's it by 5.
