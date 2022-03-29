@@ -1,1 +1,33 @@
-COMPLETE ME!
+1. Java executes a set of repeated statements as long as a specified condition remains true.
+
+2. 
+The while loop loops through a block of code as long as a specified condition is true.
+And the The do/while loop is a variant of the while loop. 
+This loop will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true.
+
+3.
+The AccountSetup.java Program.
+
+4.
+A loop that has no end to it and will continue to run without stop.
+
+EXAMPLE
+[
+if (stringINT < 8) 
+            {
+            	System.out.println("Password is too short please enter new password");
+            	TimeUnit.SECONDS.sleep(2);
+            	continue;
+            	
+            }
+]
+Without the [continue;] or a [break;] instead, it would just endlessly repeat the System.out.println without stop.
+
+Overflow occurs when we assign such a value to a variable which is more than the maximum permissible value.
+The [int] Data-Type has a hard limit of -2,147,483,647 to 2,147,483,647 adding even -1 to the - value or 1 to the + value will cause an overflow.
+
+5.
+It will continue to add 2 to the value of x until x is equal to or greater than 120.
+
+6.
+Any value equal to or under 119.
