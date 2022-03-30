@@ -33,5 +33,16 @@ It will continue to add 2 to the value of x until x is equal to or greater than 
 Any value equal to or under 119.
 
 7.
-And accumulator is a variable that is incremented by varying amounts,
+An accumulator is a variable that is incremented by varying amounts,
 For an example, X increase's I by 10 when the code is executed, while Y increase's it by 5.
+A counter variable is a variable that keeps track of the number of times a specific piece of code is executed.
+For an example, Player X opened door I 10 times in his escape of Player Y the counter keeps track of how many times the player,
+opened door I and decides whether or not to block it because of how often they are escaping and keeping Player Y in an infinite loop chase.
+
+8.
+Using my NumbersSum program from chapter 5 and changing the int of x in the for loop from 1 to 3 shall give you the Sum of,
+the integers of 3 to 10 and is inclusive.
+
+9.
+Loops can execute a block of code as long as a specified condition is reached.
+When you know exactly how many times you want to loop through a block of code, use the for loop instead of a while loop:
