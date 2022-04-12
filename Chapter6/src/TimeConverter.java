@@ -32,6 +32,7 @@ public class TimeConverter {
 		JButton htm = new JButton();
 		htm.setText("Hours to Minutes");
 		htm.setBackground(Color.WHITE);
+		htm.setBounds(0,0,150, 40);   // X,Y L,W
 		frame.setLayout(null); 
 		frame.setVisible(true);
 		htm.addActionListener(new HTM());
@@ -39,29 +40,32 @@ public class TimeConverter {
 		JButton dth = new JButton();
 		dth.setText("Days to Hours");
 		dth.setBackground(Color.WHITE);
+		dth.setBounds(0,40,150, 40);   
 		frame.setLayout(null); 
 		frame.setVisible(true);
 		dth.addActionListener(new DTH());
 //---------------------------------------------------------------// 
 		JButton mth = new JButton();
 		mth.setText("Minutes to Hours");
-		mth.setBackground(Color.WHITE); 
+		mth.setBackground(Color.WHITE);
+		mth.setBounds(150,0,150, 40);   
 		frame.setLayout(null); 
 		frame.setVisible(true);
 		mth.addActionListener(new MTH());
 //---------------------------------------------------------------//
 		JButton htd = new JButton();
 		htd.setText("Hours to Days");
-		htd.setBackground(Color.WHITE);  
+		htd.setBackground(Color.WHITE);
+		htd.setBounds(150,40,150, 40);   
 		frame.setLayout(null); 
 		frame.setVisible(true);
 		htd.addActionListener(new HTD());
 //---------------------------------------------------------------//
-		frame.setLayout(new BorderLayout());
-		frame.add(htm, BorderLayout.NORTH);
-		frame.add(dth, BorderLayout.SOUTH);
-		frame.add(mth, BorderLayout.WEST);
-		frame.add(htd, BorderLayout.EAST);
+		frame.setLayout(new FlowLayout());
+		frame.add(htm);
+		frame.add(dth);
+		frame.add(mth);
+		frame.add(htd);
 //---------------------------------------------------------------//
 	}
 }
