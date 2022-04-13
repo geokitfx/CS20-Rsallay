@@ -60,14 +60,11 @@ public class TimeConverter {
 		frame.setVisible(true);
 		htd.addActionListener(new HTD());
 //---------------------------------------------------------------//
-		JTextField Input = new JTextField(5);
-//---------------------------------------------------------------//
 		frame.setLayout(new FlowLayout());
 		frame.add(htm);
 		frame.add(dth);
 		frame.add(mth);
 		frame.add(htd);
-		frame.add(Input);
 //---------------------------------------------------------------//
 	}
 }
