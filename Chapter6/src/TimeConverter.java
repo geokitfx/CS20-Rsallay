@@ -1,5 +1,4 @@
 import java.awt.*;
-import java.awt.event.*;
 import javax.swing.*;
 
 
@@ -61,16 +60,14 @@ public class TimeConverter {
 		frame.setVisible(true);
 		htd.addActionListener(new HTD());
 //---------------------------------------------------------------//
+		JTextField Input = new JTextField(5);
+//---------------------------------------------------------------//
 		frame.setLayout(new FlowLayout());
 		frame.add(htm);
 		frame.add(dth);
 		frame.add(mth);
 		frame.add(htd);
-		frame.add(htm, BorderLayout.NORTH);
-		frame.add(dth, BorderLayout.SOUTH);
-		frame.add(mth, BorderLayout.WEST);
-		frame.add(htd, BorderLayout.EAST);
-		frame.add(new JButton("center"), BorderLayout.CENTER);
+		frame.add(Input);
 //---------------------------------------------------------------//
 	}
 }
