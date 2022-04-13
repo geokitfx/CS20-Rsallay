@@ -66,6 +66,11 @@ public class TimeConverter {
 		frame.add(dth);
 		frame.add(mth);
 		frame.add(htd);
+		frame.add(htm, BorderLayout.NORTH);
+		frame.add(dth, BorderLayout.SOUTH);
+		frame.add(mth, BorderLayout.WEST);
+		frame.add(htd, BorderLayout.EAST);
+		frame.add(new JButton("center"), BorderLayout.CENTER);
 //---------------------------------------------------------------//
 	}
 }
