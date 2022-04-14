@@ -1,18 +1,19 @@
+package TimeConverter;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.JOptionPane;
 
-public class HTD implements ActionListener {
+public class HTM implements ActionListener {
 	public void actionPerformed(ActionEvent event) {
 		int choice = JOptionPane.showConfirmDialog(null, "Confirm?");
 		if (choice == JOptionPane.YES_OPTION) { 
 			String ageText = JOptionPane.showInputDialog(null, "How many Hours?");
 			int hours = Integer.parseInt(ageText);
 			
-			double days = hours / 24.0;
+			int minutes = hours * 60;
 			
-			JOptionPane.showMessageDialog(null, "You inputed " + hours + " Hours, Thats " + days + " Day's!");
+			JOptionPane.showMessageDialog(null, "You inputed " + hours + " Hours, Thats " + minutes + " Minutes!");
 			 } 
 		else 
 		{ // choice == NO_OPTION or CANCEL_OPTION
