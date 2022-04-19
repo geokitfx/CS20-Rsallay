@@ -10,7 +10,6 @@ Purpose: Modify the PrimeNumber application created in Chapter 5 Exercise 1 to i
 Author: Rowan Sallay, 
 School: CHHS
 Course: Computer Programming 20
- 
 
 */
 
