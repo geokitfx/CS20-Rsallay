@@ -37,3 +37,9 @@ String t = "True";
 }
 
 7.
+
+The compiler distinguishes overloaded methods by their signatures,
+a combination of the method’s name and the number, types and order of its parameters, but not its return type.
+
+while coding java two or more methods may have the same name if they differ in parameters,
+not unless its a method-overload.
