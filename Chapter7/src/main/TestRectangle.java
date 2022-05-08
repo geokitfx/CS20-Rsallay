@@ -3,6 +3,7 @@ package main;
 public class TestRectangle 
 {
 	//Tester Calls upon these "FUNCTIONS" to produce answer.
+	//Sorta Acts like an import "EXAMPLE = Scanner".
 	
 	private double length, width;
 	
