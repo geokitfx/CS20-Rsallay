@@ -55,7 +55,7 @@ public class TestRectangle
 	public String toString()
 	{
 		String testrectangleString;
-		testrectangleString = "TestRectangle Box B has length " + length + " and width " + width;
+		testrectangleString = "TestRectangle has length " + length + " and width " + width;
 		return(testrectangleString);
 	}
 	
