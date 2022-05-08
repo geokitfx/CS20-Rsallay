@@ -2,6 +2,7 @@ package main;
 
 public class TestRectangle 
 {
+	//Tester Calls upon these "FUNCTIONS" to produce answer.
 	
 	private double length, width;
 	
@@ -37,4 +38,25 @@ public class TestRectangle
 		return(width);
 	}
 
+	public double area()
+	{
+		double rectArea;
+		rectArea = length * width;
+		return(rectArea);
+	}
+	
+	public double perimeter()
+	{
+		double rectPerimeter;
+		rectPerimeter = (2 * length) + (2 * width);
+		return(rectPerimeter);
+	}
+	
+	public String toString()
+	{
+		String testrectangleString;
+		testrectangleString = "TestRectangle Box B has length " + length + " and width " + width;
+		return(testrectangleString);
+	}
+	
 }
