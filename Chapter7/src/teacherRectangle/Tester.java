@@ -1,4 +1,4 @@
-package main;
+package teacherRectangle;
 
 public class Tester {
 
