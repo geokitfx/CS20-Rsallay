@@ -6,14 +6,14 @@ import javax.swing.JOptionPane;
 
 public class AddDim implements ActionListener {
 	public void actionPerformed(ActionEvent event) {
+		Total totalAmount = new Total();
 		int choice = JOptionPane.showConfirmDialog(null, "Confirm?");
 		if (choice == JOptionPane.YES_OPTION) { 
 			String ageText = JOptionPane.showInputDialog(null, "How many Minutes?");
-			int minutes = Integer.parseInt(ageText);
+			int dimesA = Integer.parseInt(ageText);
 			
-			double hours = minutes / 60.0;
-			
-			JOptionPane.showMessageDialog(null, "You inputed " + minutes + " Minutes, Thats " + hours + " Hours!");
+			totalAmount.addDeposit(dimesA);
+			JOptionPane.showMessageDialog(null, "You have " + totalAmount.getTotal());
 			 } 
 		else 
 		{ // choice == NO_OPTION or CANCEL_OPTION

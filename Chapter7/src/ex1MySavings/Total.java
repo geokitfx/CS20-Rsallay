@@ -13,14 +13,28 @@ public class Total
 		total = 0;  
 	}
 	
-	public void setTotal(double newTotal)
-	{
-		total = newTotal;  
-	}
-	
 	public double getTotal()
 	{
 		 return(total);  
+	}
+	
+	public void addDeposit(double amt)
+	{
+		total += amt;	
+	}
+	
+	public void getWithdrawl(double amt)
+	{
+		if (amt <= total) {
+			total -= amt;
+		}
+	}
+	
+	public String toStringWithNot()
+	{
+		String totalString;
+		totalString = "Not enough money to withdraw";
+		return(totalString);
 	}
 	
 }

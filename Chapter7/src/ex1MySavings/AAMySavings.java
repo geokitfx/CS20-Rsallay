@@ -20,7 +20,9 @@ Course: Computer Programming 20
 public class AAMySavings {
 
 	public static void main(String[] args) {
-		 
+		
+		Total totalAmount = new Total();
+//---------------------------------------------------------------// 
 		JFrame frame = new JFrame();
 		frame.setForeground(Color.WHITE);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -30,9 +32,9 @@ public class AAMySavings {
 		frame.setVisible(true);
 //---------------------------------------------------------------// 
 		JLabel htm = new JLabel ();
-		htm.setText("Hours to Minutes");
+		htm.setText("Total In bank: "+totalAmount.getTotal()+ "$");
 		htm.setBackground(Color.WHITE);
-		htm.setBounds(0,0,150, 40);   // X,Y L,W
+		htm.setBounds(30,0,150, 40);   // X,Y L,W
 		frame.setLayout(null); 
 		frame.setVisible(true);
 //---------------------------------------------------------------// 
@@ -42,7 +44,7 @@ public class AAMySavings {
 		dth.setBounds(0,40,150, 40);   
 		frame.setLayout(null); 
 		frame.setVisible(true);
-		dth.addActionListener(new Total());
+		dth.addActionListener(new AddNic());
 //---------------------------------------------------------------// 
 		JButton mth = new JButton();
 		mth.setText("Minutes to Hours");
