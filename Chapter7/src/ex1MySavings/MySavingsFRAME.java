@@ -1,13 +1,13 @@
 package ex1MySavings;
 
-public class Circle2 {
+public class MySavingsFRAME {
 
 	public static void main(String[] args) 
 	{
-		CircleFUNC2 spotA = new CircleFUNC2();
+		MSMathFRAME spotA = new MSMathFRAME();
 		spotA.setRadius(3);
 		
-		CircleFUNC2 spotB = new CircleFUNC2(5);
+		MSMathFRAME spotB = new MSMathFRAME(5);
 		
 		System.out.println("Circle Radius: "+ spotA.getRadius());
 		System.out.println("Circle circumference: "+ spotA.circumference());

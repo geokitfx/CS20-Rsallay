@@ -1,6 +1,6 @@
 package ex1MySavings;
 
-public class CircleFUNC2 
+public class MSMathFRAME 
 {
 	//private static final double PI = 3.14;
 	private double radius;
@@ -8,12 +8,12 @@ public class CircleFUNC2
 	//Sorta Acts like an import "EXAMPLE = Scanner".
 	
 	
-	public CircleFUNC2()
+	public MSMathFRAME()
 	{
 		radius = 1;  
 	}
 	
-	public CircleFUNC2(int r)
+	public MSMathFRAME(int r)
 	{
 		radius = r;  
 	}
