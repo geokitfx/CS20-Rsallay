@@ -10,12 +10,7 @@ public class Total
 	
 	public Total()
 	{
-		total = 1;  
-	}
-	
-	public Total(int r)
-	{
-		total = r;  
+		total = 0;  
 	}
 	
 	public void setTotal(double newTotal)
