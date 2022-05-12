@@ -2,38 +2,31 @@ package ex1MySavings;
 
 public class MSMathFRAME 
 {
-	//private static final double PI = 3.14;
-	private double radius;
+	private double Total;
 	//Tester Calls upon these "FUNCTIONS" to produce answer.
 	//Sorta Acts like an import "EXAMPLE = Scanner".
 	
 	
-	public MSMathFRAME()
+	public MSMathFRAME(double tot)
 	{
-		radius = 1;  
+		Total = tot;  
 	}
 	
-	public MSMathFRAME(int r)
+	public double getTotal()
 	{
-		radius = r;  
+		return(Total); 
 	}
 	
-	public void setRadius(double newRadius)
+	public void addTot(double amt)
 	{
-		radius = newRadius;  
+		Total += amt; 
 	}
 	
-	public double circumference()
+	public void subTot(double amt)
 	{
-		double circCircumference;
-		circCircumference = Math.PI * 2 * radius;
-		return(circCircumference);
-		
+		if (amt <= Total) 
+		{ Total -= amt; }
+		else
+		{System.out.println("Insufficient Balance.");}
 	}
-	
-	public double getRadius()
-	{
-		 return(radius);  
-	}
-	
 }
