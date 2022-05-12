@@ -35,7 +35,7 @@ public class TimeConverter {
 		htm.setBounds(0,0,150, 40);   // X,Y L,W
 		frame.setLayout(null); 
 		frame.setVisible(true);
-		htm.addActionListener(new HTM());
+		htm.addActionListener(new AddNic());
 //---------------------------------------------------------------// 
 		JButton dth = new JButton();
 		dth.setText("Days to Hours");
@@ -43,7 +43,7 @@ public class TimeConverter {
 		dth.setBounds(0,40,150, 40);   
 		frame.setLayout(null); 
 		frame.setVisible(true);
-		dth.addActionListener(new DTH());
+		dth.addActionListener(new Total());
 //---------------------------------------------------------------// 
 		JButton mth = new JButton();
 		mth.setText("Minutes to Hours");
@@ -51,7 +51,7 @@ public class TimeConverter {
 		mth.setBounds(150,0,150, 40);   
 		frame.setLayout(null); 
 		frame.setVisible(true);
-		mth.addActionListener(new MTH());
+		mth.addActionListener(new AddDim());
 //---------------------------------------------------------------//
 		JButton htd = new JButton();
 		htd.setText("Hours to Days");
@@ -59,7 +59,7 @@ public class TimeConverter {
 		htd.setBounds(150,40,150, 40);   
 		frame.setLayout(null); 
 		frame.setVisible(true);
-		htd.addActionListener(new HTD());
+		htd.addActionListener(new AddPen());
 //---------------------------------------------------------------//
 		frame.setLayout(new FlowLayout());
 		frame.add(htm);

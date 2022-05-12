@@ -4,7 +4,7 @@ import java.awt.event.ActionListener;
 
 import javax.swing.JOptionPane;
 
-public class MTH implements ActionListener {
+public class AddDim implements ActionListener {
 	public void actionPerformed(ActionEvent event) {
 		int choice = JOptionPane.showConfirmDialog(null, "Confirm?");
 		if (choice == JOptionPane.YES_OPTION) { 
