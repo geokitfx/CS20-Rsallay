@@ -29,13 +29,12 @@ public class AAMySavings {
 		frame.setTitle("Time Converter");
 		frame.setVisible(true);
 //---------------------------------------------------------------// 
-		JButton htm = new JButton();
+		JLabel htm = new JLabel ();
 		htm.setText("Hours to Minutes");
 		htm.setBackground(Color.WHITE);
 		htm.setBounds(0,0,150, 40);   // X,Y L,W
 		frame.setLayout(null); 
 		frame.setVisible(true);
-		htm.addActionListener(new AddNic());
 //---------------------------------------------------------------// 
 		JButton dth = new JButton();
 		dth.setText("Days to Hours");
