@@ -17,7 +17,7 @@ Course: Computer Programming 20
 
 */
 
-public class TimeConverter {
+public class AAMySavings {
 
 	public static void main(String[] args) {
 		 
