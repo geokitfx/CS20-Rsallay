@@ -18,18 +18,18 @@ public class MSMathFRAME
 	
 	public double getTotal()
 	{
-		return(Total); 
+		return Total; 
 	}
 	
 	public void addTot(double amt)
 	{
-		Total += amt; 
+		Total = Total + amt; 
 	}
 	
 	public void subTot(double amt)
 	{
 		if (amt <= Total) 
-		{ Total -= amt; }
+		{ Total = Total - amt; }
 		else
 		{System.out.println("Insufficient Balance.");}
 	}

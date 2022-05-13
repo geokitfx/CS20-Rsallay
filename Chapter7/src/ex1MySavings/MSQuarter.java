@@ -11,7 +11,7 @@ public class MSQuarter implements ActionListener {
 			String quarterText = JOptionPane.showInputDialog(null, "How many Quarters?");
 			double quarter = Double.parseDouble(quarterText);
 			
-			double total = quarter / 10;
+			double total = quarter / 4;
 			
 			JOptionPane.showMessageDialog(null, "You added " + total + "$ To the piggy bank.");
 			 } 
