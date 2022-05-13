@@ -7,10 +7,16 @@ import java.text.NumberFormat;
 import javax.swing.JOptionPane;
 
 public class MSTotal implements ActionListener {
+	private MSMathFRAME frameWork;
+	public MSTotal(MSMathFRAME frameWork) {
+		this.frameWork = frameWork;
+		
+	}
+
 	public void actionPerformed(ActionEvent event) {
 		int choice = JOptionPane.showConfirmDialog(null, "Confirm?");
 		if (choice == JOptionPane.YES_OPTION) { 
-			MSMathFRAME frameWork = new MSMathFRAME();
+			
 			NumberFormat money = NumberFormat.getCurrencyInstance();
 			
 			JOptionPane.showMessageDialog(null, "You have " + money.format(frameWork.getTotal()));

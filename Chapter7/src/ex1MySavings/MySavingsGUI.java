@@ -6,13 +6,14 @@ import javax.swing.*;
 public class MySavingsGUI {
 
 	public static void main(String[] args) {
+		MSMathFRAME frameWork = new MSMathFRAME();
 		 
 		JFrame frame = new JFrame();
 		frame.setForeground(Color.WHITE);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setLocation(new Point(10, 50));
 		frame.setSize(new Dimension(1600, 900)); // W,H
-		frame.setTitle("Time Converter");
+		frame.setTitle("My Savings");
 		frame.setVisible(true);
 //---------------------------------------------------------------// 
 		JButton tot = new JButton();
@@ -21,7 +22,7 @@ public class MySavingsGUI {
 		tot.setBounds(0,0,150, 40);   // X,Y L,W
 		frame.setLayout(null); 
 		frame.setVisible(true);
-		tot.addActionListener(new MSTotal());
+		tot.addActionListener(new MSTotal(frameWork));
 //---------------------------------------------------------------// 
 		JButton adp = new JButton();
 		adp.setText("Add a Penny");
@@ -29,7 +30,7 @@ public class MySavingsGUI {
 		adp.setBounds(0,0,150, 40);   // X,Y L,W
 		frame.setLayout(null); 
 		frame.setVisible(true);
-		adp.addActionListener(new MSPenny());
+		adp.addActionListener(new MSPenny(frameWork));
 //---------------------------------------------------------------// 
 		JButton adn = new JButton();
 		adn.setText("Add a Nickel");
@@ -37,7 +38,7 @@ public class MySavingsGUI {
 		adn.setBounds(0,40,150, 40);   
 		frame.setLayout(null); 
 		frame.setVisible(true);
-		adn.addActionListener(new MSNickel());
+		adn.addActionListener(new MSNickel(frameWork));
 //---------------------------------------------------------------// 
 		JButton add = new JButton();
 		add.setText("Add a Dime");
@@ -45,7 +46,7 @@ public class MySavingsGUI {
 		add.setBounds(150,0,150, 40);   
 		frame.setLayout(null); 
 		frame.setVisible(true);
-		add.addActionListener(new MSDime());
+		add.addActionListener(new MSDime(frameWork));
 //---------------------------------------------------------------//
 		JButton adq = new JButton();
 		adq.setText("Add a Quarter");
@@ -53,7 +54,7 @@ public class MySavingsGUI {
 		adq.setBounds(150,40,150, 40);   
 		frame.setLayout(null); 
 		frame.setVisible(true);
-		adq.addActionListener(new MSQuarter());
+		adq.addActionListener(new MSQuarter(frameWork));
 //---------------------------------------------------------------//
 		JButton sub = new JButton();
 		sub.setText("Withdraw $");
@@ -61,7 +62,7 @@ public class MySavingsGUI {
 		sub.setBounds(150,40,150, 40);   
 		frame.setLayout(null); 
 		frame.setVisible(true);
-		sub.addActionListener(new MSWithdraw());
+		sub.addActionListener(new MSWithdraw(frameWork));
 //---------------------------------------------------------------//
 		frame.setLayout(new FlowLayout());
 		frame.add(tot);

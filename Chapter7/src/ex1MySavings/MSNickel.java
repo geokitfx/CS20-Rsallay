@@ -5,15 +5,22 @@ import java.awt.event.ActionListener;
 import javax.swing.JOptionPane;
 
 public class MSNickel implements ActionListener {
+	private MSMathFRAME frameWork;
+		public MSNickel(MSMathFRAME frameWork) {
+			this.frameWork = frameWork;
+	}
+
 		public void actionPerformed(ActionEvent event) {
 			int choice = JOptionPane.showConfirmDialog(null, "Confirm?");
 			if (choice == JOptionPane.YES_OPTION) { 
 				String nickelText = JOptionPane.showInputDialog(null, "How many Nickels?");
 				double nickel = Double.parseDouble(nickelText);
 				
-				double total = nickel / 20;
+				double data = nickel / 20;
 				
-				JOptionPane.showMessageDialog(null, "You added " + total + "$ To the piggy bank.");
+				frameWork.addTot(data);
+				
+				JOptionPane.showMessageDialog(null, "You added " + data + "$ To the piggy bank.");
 				 } 
 			else 
 			{ // choice == NO_OPTION or CANCEL_OPTION

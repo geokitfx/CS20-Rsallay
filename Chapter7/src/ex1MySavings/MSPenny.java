@@ -5,18 +5,23 @@ import java.awt.event.ActionListener;
 import javax.swing.JOptionPane;
 
 public class MSPenny implements ActionListener {
+	private MSMathFRAME frameWork;
+	public MSPenny(MSMathFRAME frameWork) {
+		this.frameWork = frameWork;
+	}
+
 	public void actionPerformed(ActionEvent event) {
 		int choice = JOptionPane.showConfirmDialog(null, "Confirm?");
 		if (choice == JOptionPane.YES_OPTION) {
-			MSMathFRAME frameWork = new MSMathFRAME();
 			String pennyText = JOptionPane.showInputDialog(null, "How many Pennys?");
 			double pennys = Double.parseDouble(pennyText);
 			
-			double total = pennys / 100;
+			double data = pennys / 100;
 			
-	        frameWork.addTot(total);
+	        frameWork.addTot(data);
 			
-			JOptionPane.showMessageDialog(null, "You added " + total + "$ To the piggy bank.");
+			JOptionPane.showMessageDialog(null, "You added " + data + "$ To the piggy bank.");
+			System.out.println("Total: "+ frameWork.getTotal());
 			 } 
 		else 
 		{ // choice == NO_OPTION or CANCEL_OPTION

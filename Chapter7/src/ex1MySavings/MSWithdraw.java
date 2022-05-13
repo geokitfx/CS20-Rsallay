@@ -5,15 +5,22 @@ import java.awt.event.ActionListener;
 import javax.swing.JOptionPane;
 
 public class MSWithdraw implements ActionListener {
+	private MSMathFRAME frameWork;
+	public MSWithdraw(MSMathFRAME frameWork) {
+		this.frameWork = frameWork;
+	}
+
 	public void actionPerformed(ActionEvent event) {
 		int choice = JOptionPane.showConfirmDialog(null, "Confirm?");
 		if (choice == JOptionPane.YES_OPTION) { 
 			String withdrawText = JOptionPane.showInputDialog(null, "How will you take?");
 			double withdraw = Double.parseDouble(withdrawText);
 			
-			double total = withdraw / 100;
+			double data = withdraw / 100;
 			
-			JOptionPane.showMessageDialog(null, "You added " + total + "$ To the piggy bank.");
+			frameWork.addTot(data);
+			
+			JOptionPane.showMessageDialog(null, "You added " + data + "$ To the piggy bank.");
 			 } 
 		else 
 		{ // choice == NO_OPTION or CANCEL_OPTION

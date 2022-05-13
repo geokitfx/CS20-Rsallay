@@ -13,7 +13,7 @@ public class MSMathFRAME
 	
 	public MSMathFRAME(double tot)
 	{
-		Total = tot;  
+		Total = tot;
 	}
 	
 	public double getTotal()
