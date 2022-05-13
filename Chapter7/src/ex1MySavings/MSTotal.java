@@ -1,6 +1,8 @@
 package ex1MySavings;
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.text.NumberFormat;
 
 import javax.swing.JOptionPane;
 
@@ -9,8 +11,10 @@ public class MSTotal implements ActionListener {
 		int choice = JOptionPane.showConfirmDialog(null, "Confirm?");
 		if (choice == JOptionPane.YES_OPTION) { 
 			MSMathFRAME frameWork = new MSMathFRAME();
+			NumberFormat money = NumberFormat.getCurrencyInstance();
 			
-			JOptionPane.showMessageDialog(null, "You have " + frameWork.getTotal() + "$");
+			JOptionPane.showMessageDialog(null, "You have " + money.format(frameWork.getTotal()));
+			System.out.println("Total: "+ frameWork.getTotal());
 			 } 
 		else 
 		{ // choice == NO_OPTION or CANCEL_OPTION
