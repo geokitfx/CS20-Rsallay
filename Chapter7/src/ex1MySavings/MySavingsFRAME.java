@@ -6,23 +6,23 @@ public class MySavingsFRAME {
 
 	public static void main(String[] args) 
 	{
-		MSMathFRAME spotA = new MSMathFRAME(0);
+		MSMathFRAME frameWork = new MSMathFRAME();
 		
 		Scanner input = new Scanner(System.in);
         double data;
         
         System.out.println("Enter any number: ");
         data = input.nextDouble();
-        spotA.addTot(data);
+        frameWork.addTot(data);
         
 		
-		System.out.println("Total: "+ spotA.getTotal());
+		System.out.println("Total: "+ frameWork.getTotal());
 		
 		System.out.println("Enter any number: ");
         data = input.nextDouble();
-        spotA.subTot(data);
+        frameWork.subTot(data);
         
-        System.out.println("Total: "+ spotA.getTotal());
+        System.out.println("Total: "+ frameWork.getTotal());
         
         input.close();
 		

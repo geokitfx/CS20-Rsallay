@@ -6,6 +6,10 @@ public class MSMathFRAME
 	//Tester Calls upon these "FUNCTIONS" to produce answer.
 	//Sorta Acts like an import "EXAMPLE = Scanner".
 	
+	public MSMathFRAME()
+	{
+		Total = 0;
+	}
 	
 	public MSMathFRAME(double tot)
 	{

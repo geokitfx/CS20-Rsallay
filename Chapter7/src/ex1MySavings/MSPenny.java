@@ -7,13 +7,16 @@ import javax.swing.JOptionPane;
 public class MSPenny implements ActionListener {
 	public void actionPerformed(ActionEvent event) {
 		int choice = JOptionPane.showConfirmDialog(null, "Confirm?");
-		if (choice == JOptionPane.YES_OPTION) { 
-			String ageText = JOptionPane.showInputDialog(null, "How many Hours?");
-			int hours = Integer.parseInt(ageText);
+		if (choice == JOptionPane.YES_OPTION) {
+			MSMathFRAME frameWork = new MSMathFRAME();
+			String pennyText = JOptionPane.showInputDialog(null, "How many Pennys?");
+			double pennys = Double.parseDouble(pennyText);
 			
-			int minutes = hours * 60;
+			double total = pennys / 100;
 			
-			JOptionPane.showMessageDialog(null, "You inputed " + hours + " Hours, Thats " + minutes + " Minutes!");
+	        frameWork.addTot(total);
+			
+			JOptionPane.showMessageDialog(null, "You added " + total + "$ To the piggy bank.");
 			 } 
 		else 
 		{ // choice == NO_OPTION or CANCEL_OPTION

@@ -8,12 +8,12 @@ public class MSDime implements ActionListener {
 	public void actionPerformed(ActionEvent event) {
 		int choice = JOptionPane.showConfirmDialog(null, "Confirm?");
 		if (choice == JOptionPane.YES_OPTION) { 
-			String ageText = JOptionPane.showInputDialog(null, "How many Minutes?");
-			int minutes = Integer.parseInt(ageText);
+			String dimeText = JOptionPane.showInputDialog(null, "How many Dimes?");
+			double dime = Double.parseDouble(dimeText);
 			
-			double hours = minutes / 60.0;
+			double total = dime / 10;
 			
-			JOptionPane.showMessageDialog(null, "You inputed " + minutes + " Minutes, Thats " + hours + " Hours!");
+			JOptionPane.showMessageDialog(null, "You added " + total + "$ To the piggy bank.");
 			 } 
 		else 
 		{ // choice == NO_OPTION or CANCEL_OPTION

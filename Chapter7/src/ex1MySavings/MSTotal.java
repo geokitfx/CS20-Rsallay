@@ -4,16 +4,13 @@ import java.awt.event.ActionListener;
 
 import javax.swing.JOptionPane;
 
-public class MSQuarter implements ActionListener {
+public class MSTotal implements ActionListener {
 	public void actionPerformed(ActionEvent event) {
 		int choice = JOptionPane.showConfirmDialog(null, "Confirm?");
 		if (choice == JOptionPane.YES_OPTION) { 
-			String quarterText = JOptionPane.showInputDialog(null, "How many Quarters?");
-			double quarter = Double.parseDouble(quarterText);
+			MSMathFRAME frameWork = new MSMathFRAME();
 			
-			double total = quarter / 10;
-			
-			JOptionPane.showMessageDialog(null, "You added " + total + "$ To the piggy bank.");
+			JOptionPane.showMessageDialog(null, "You have " + frameWork.getTotal() + "$");
 			 } 
 		else 
 		{ // choice == NO_OPTION or CANCEL_OPTION

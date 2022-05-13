@@ -8,12 +8,12 @@ public class MSNickel implements ActionListener {
 		public void actionPerformed(ActionEvent event) {
 			int choice = JOptionPane.showConfirmDialog(null, "Confirm?");
 			if (choice == JOptionPane.YES_OPTION) { 
-				String ageText = JOptionPane.showInputDialog(null, "How many days?");
-				int days = Integer.parseInt(ageText);
+				String nickelText = JOptionPane.showInputDialog(null, "How many Nickels?");
+				double nickel = Double.parseDouble(nickelText);
 				
-				int hours = days * 24;
+				double total = nickel / 20;
 				
-				JOptionPane.showMessageDialog(null, "You inputed " + days + " Day's, Thats " + hours + " Hours!");
+				JOptionPane.showMessageDialog(null, "You added " + total + "$ To the piggy bank.");
 				 } 
 			else 
 			{ // choice == NO_OPTION or CANCEL_OPTION
