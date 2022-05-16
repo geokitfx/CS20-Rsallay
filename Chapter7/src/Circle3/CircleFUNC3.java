@@ -28,12 +28,16 @@ public class CircleFUNC3
 		double circCircumference;
 		circCircumference = Math.PI * 2 * radius;
 		return(circCircumference);
-		
 	}
 	
 	public double getRadius()
 	{
 		 return(radius);  
+	}
+	
+	public static void displayAreaFormula()
+	{
+		System.out.println("The formula for the area of a circle is A = Pi * R * R");
 	}
 	
 }

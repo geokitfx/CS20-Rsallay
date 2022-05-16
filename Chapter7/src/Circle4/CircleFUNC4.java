@@ -28,7 +28,26 @@ public class CircleFUNC4
 		double circCircumference;
 		circCircumference = Math.PI * 2 * radius;
 		return(circCircumference);
+	}
+	
+	public boolean equals(Object c)
+	{
+		CircleFUNC4 testobj = (CircleFUNC4)c;
 		
+		if(testobj.getRadius() == radius) {
+			return(true);
+		} else {
+			return(false);
+		}
+		
+	}
+	
+	public String toString()
+	{
+		 String CircleFUNC4String;
+		 
+		 CircleFUNC4String = "Circle has radius of " + radius;
+		 return(CircleFUNC4String);
 	}
 	
 	public double getRadius()

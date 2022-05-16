@@ -11,9 +11,11 @@ public class Circle3 {
 		
 		System.out.println("Circle Radius: "+ spotA.getRadius());
 		System.out.println("Circle circumference: "+ spotA.circumference());
+		CircleFUNC3.displayAreaFormula();
 		System.out.println(" ");
 		System.out.println("Circle Radius: "+ spotB.getRadius());
 		System.out.println("Circle circumference: "+ spotB.circumference());
+		CircleFUNC3.displayAreaFormula();
 		
 	}
 
