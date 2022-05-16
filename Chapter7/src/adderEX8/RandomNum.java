@@ -22,23 +22,12 @@ public class RandomNum {
 	public static void main(String[] args) throws InterruptedException
 	{
 		
-		System.out.println("Hello and welcome to Rowan's RandomNum application");
-        TimeUnit.SECONDS.sleep(5);
-        System.out.println("First enter a Minimum Value and then enter a Maximum Value.");
-        TimeUnit.SECONDS.sleep(5);
+		Scanner input = new Scanner(System.in);
+		int min = 0;
         
-        System.out.println("Minimum value: ");
-        TimeUnit.SECONDS.sleep(5);
-		Scanner scanmin = new Scanner(System.in);
-		int min = scanmin.nextInt();
+        int max = 20;
         
-        System.out.println("Maximum value:");
-        TimeUnit.SECONDS.sleep(5);
-		Scanner scanmax = new Scanner(System.in);
-        int max = scanmax.nextInt();
-        
-        scanmin.close();
-        scanmax.close();
+        input.close();
         
         int a = (int) ((Math.random() * (max - min)) + min);
         
