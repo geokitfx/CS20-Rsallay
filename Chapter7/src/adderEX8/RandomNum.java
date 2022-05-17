@@ -18,24 +18,45 @@ import java.util.Scanner;
 
 public class RandomNum {
 	
-	private int Score;
-	private int Trys;
-	
 	public static void main(String[] args) 
 	{
-		int Score;
+		int end = 0;
+		
+		while (end == 0) {
+			
+		int min = 0;
+	    int max = 20;
+	    int a = (int) ((Math.random() * (max - min)) + min);
+			
+		System.out.println("Max value: ");
+		@SuppressWarnings("resource")
+		Scanner input = new Scanner(System.in);
+		int value = input.nextInt();
+        
+		int Score = 0;
 		int Trys = 0;
 		
-		for (int i = 0; i < 3; i++)
+		if (value == a)
 		{
-			Score = (int)(Math.random() + 0.5);
-			if (Score == 1)
-			{
-				Trys += 1;
-			}
+			Trys = Trys + 1;
+		} 
+		
+		if (Trys == 1) {
+			Score = Score + 5;
+			Trys = 0;
+		}  
+		else if (Trys == 2) {
+			Score = Score + 3;
+		} 
+		else if (Trys == 3) {
+			Score = Score + 1;
+		} 
+		else if (Trys == 4) {
+			System.out.println("Your score is: " + Score);
+			end = end +1;
+		}
 		}
 	}
-        
         
 	}
 
