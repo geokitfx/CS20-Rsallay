@@ -1,5 +1,9 @@
 package ex1MySavings;
 
+//USE MySavingsGUI.java to run program!
+//USE MySavingsGUI.java to run program!
+//USE MySavingsGUI.java to run program!
+
 public class MSMathFRAME 
 {
 	private double Total;

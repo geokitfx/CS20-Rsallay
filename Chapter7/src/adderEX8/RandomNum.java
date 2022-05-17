@@ -20,6 +20,7 @@ public class RandomNum {
 	
 	public static void main(String[] args) 
 	{
+		GameMath frameWork = new GameMath();
 		int end = 0;
 		
 		while (end == 0) {
@@ -27,32 +28,50 @@ public class RandomNum {
 		int min = 0;
 	    int max = 20;
 	    int a = (int) ((Math.random() * (max - min)) + min);
+	    int b = (int) ((Math.random() * (max - min)) + min);
 			
-		System.out.println("Max value: ");
+		System.out.println(a + " + " + b + " = ");
+		System.out.println(frameWork.getTrys());
 		@SuppressWarnings("resource")
 		Scanner input = new Scanner(System.in);
 		int value = input.nextInt();
         
-		int Score = 0;
-		int Trys = 0;
+		int awn = a + b;
+		int data = 1;
 		
-		if (value == a)
+		int ScoreA = 5;
+		int ScoreB = 3;
+		int ScoreC = 1;
+		
+		if (value == awn)
 		{
-			Trys = Trys + 1;
+			frameWork.reset();
 		} 
 		
-		if (Trys == 1) {
-			Score = Score + 5;
-			Trys = 0;
-		}  
-		else if (Trys == 2) {
-			Score = Score + 3;
+		if (value != awn) 
+		{
+			frameWork.addTry(data);
 		} 
-		else if (Trys == 3) {
-			Score = Score + 1;
+		
+		if (frameWork.getTrys() == 1) {
+			frameWork.addScore(ScoreA);
+			frameWork.reset();
+		} else {
+			
+		}
+		
+		if (frameWork.getTrys() == 2) {
+			frameWork.addScore(ScoreB);
+			frameWork.reset();
 		} 
-		else if (Trys == 4) {
-			System.out.println("Your score is: " + Score);
+		
+		if (frameWork.getTrys() == 3) {
+			frameWork.addScore(ScoreC);
+			frameWork.reset();
+		} 
+		
+		if (frameWork.getTrys() == 4) {
+			System.out.println("Your score is: " + frameWork.getScore());
 			end = end +1;
 		}
 		}
@@ -72,39 +91,4 @@ Maximum value:
 Random Number is: 2831
 Program Finished, Thank you for using this Program.
 
-*/
-
-/*
-		System.out.println("Max value: ");
-		Scanner input = new Scanner(System.in);
-		int value = input.nextInt();
-		
-		int min = 0;
-        
-        int max = 20;
-        
-        input.close();
-        
-        int a = (int) ((Math.random() * (max - min)) + min);
-        
-        if(value == a) {
-			
-		} else {
-			System.out.println("Objects are not equal");
-		}
-        
-        System.out.println("Random Number is: " + a);
-		
-		TimeUnit.SECONDS.sleep(5);
-    	System.out.println("Program Finished, Thank you for using this Program.");
-    	
-    	int mina = 1;
-		int maxa = 20;
-		int increment = 1;
-        
-        // Exit when x becomes greater than 4
-        for (int i = mina; i <= maxa; i += increment)
-        {
-            System.out.println("Value of x:" + i);
-        }
 */

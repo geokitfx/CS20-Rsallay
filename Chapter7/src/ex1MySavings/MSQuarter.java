@@ -1,8 +1,11 @@
 package ex1MySavings;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
 import javax.swing.JOptionPane;
+
+//USE MySavingsGUI.java to run program!
+//USE MySavingsGUI.java to run program!
+//USE MySavingsGUI.java to run program!
 
 public class MSQuarter implements ActionListener {
 	private MSMathFRAME frameWork;

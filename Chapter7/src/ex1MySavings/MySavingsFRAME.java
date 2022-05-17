@@ -3,6 +3,9 @@ package ex1MySavings;
 import java.text.NumberFormat;
 import java.util.Scanner;
 
+//USE MySavingsGUI.java to run program!
+//USE MySavingsGUI.java to run program!
+//USE MySavingsGUI.java to run program!
 
 public class MySavingsFRAME {
 
