@@ -32,45 +32,37 @@ public class RandomNum {
 			
 		System.out.println(a + " + " + b + " = ");
 		System.out.println(frameWork.getTrys());
+		System.out.println(frameWork.getScore());
 		@SuppressWarnings("resource")
 		Scanner input = new Scanner(System.in);
 		int value = input.nextInt();
         
 		int awn = a + b;
-		int data = 1;
+		int Try = 1;
 		
 		int ScoreA = 5;
 		int ScoreB = 3;
 		int ScoreC = 1;
 		
-		if (value == awn)
+		if (value == awn) 
 		{
 			frameWork.reset();
 		} 
-		
-		if (value != awn) 
+		else 
 		{
-			frameWork.addTry(data);
-		} 
+			frameWork.addTry(Try);
+		}
 		
 		if (frameWork.getTrys() == 1) {
 			frameWork.addScore(ScoreA);
 			frameWork.reset();
-		} else {
-			
-		}
-		
-		if (frameWork.getTrys() == 2) {
+		} else if (frameWork.getTrys() == 2) {
 			frameWork.addScore(ScoreB);
 			frameWork.reset();
-		} 
-		
-		if (frameWork.getTrys() == 3) {
+		} else if (frameWork.getTrys() == 3) {
 			frameWork.addScore(ScoreC);
 			frameWork.reset();
-		} 
-		
-		if (frameWork.getTrys() == 4) {
+		} else if (frameWork.getTrys() == 4) {
 			System.out.println("Your score is: " + frameWork.getScore());
 			end = end +1;
 		}
