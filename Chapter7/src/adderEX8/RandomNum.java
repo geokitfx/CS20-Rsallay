@@ -21,8 +21,10 @@ public class RandomNum {
 
 	public static void main(String[] args) throws InterruptedException
 	{
-		
+		System.out.println("Max value: ");
 		Scanner input = new Scanner(System.in);
+		int value = input.nextInt();
+		
 		int min = 0;
         
         int max = 20;
@@ -31,10 +33,26 @@ public class RandomNum {
         
         int a = (int) ((Math.random() * (max - min)) + min);
         
+        if(value == a) {
+			
+		} else {
+			System.out.println("Objects are not equal");
+		}
+        
         System.out.println("Random Number is: " + a);
 		
 		TimeUnit.SECONDS.sleep(5);
     	System.out.println("Program Finished, Thank you for using this Program.");
+    	
+    	int mina = 1;
+		int maxa = 20;
+		int increment = 1;
+        
+        // Exit when x becomes greater than 4
+        for (int i = mina; i <= maxa; i += increment)
+        {
+            System.out.println("Value of x:" + i);
+        }
 	}
 
 }
