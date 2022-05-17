@@ -15,12 +15,45 @@ Course: Computer Programming 20
 */
 
 import java.util.Scanner;
-import java.util.concurrent.TimeUnit;
 
 public class RandomNum {
-
-	public static void main(String[] args) throws InterruptedException
+	
+	private int Score;
+	private int Trys;
+	
+	public static void main(String[] args) 
 	{
+		int Score;
+		int Trys = 0;
+		
+		for (int i = 0; i < 3; i++)
+		{
+			Score = (int)(Math.random() + 0.5);
+			if (Score == 1)
+			{
+				Trys += 1;
+			}
+		}
+	}
+        
+        
+	}
+
+
+/* Screen Dump
+
+Hello and welcome to Rowan's RandomNum application
+First enter a Minimum Value and then enter a Maximum Value.
+Minimum value: 
+1
+Maximum value:
+10000
+Random Number is: 2831
+Program Finished, Thank you for using this Program.
+
+*/
+
+/*
 		System.out.println("Max value: ");
 		Scanner input = new Scanner(System.in);
 		int value = input.nextInt();
@@ -53,19 +86,4 @@ public class RandomNum {
         {
             System.out.println("Value of x:" + i);
         }
-	}
-
-}
-
-/* Screen Dump
-
-Hello and welcome to Rowan's RandomNum application
-First enter a Minimum Value and then enter a Maximum Value.
-Minimum value: 
-1
-Maximum value:
-10000
-Random Number is: 2831
-Program Finished, Thank you for using this Program.
-
 */
