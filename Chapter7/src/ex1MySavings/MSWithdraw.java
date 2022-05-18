@@ -16,14 +16,14 @@ public class MSWithdraw implements ActionListener {
 	public void actionPerformed(ActionEvent event) {
 		int choice = JOptionPane.showConfirmDialog(null, "Confirm?");
 		if (choice == JOptionPane.YES_OPTION) { 
-			String withdrawText = JOptionPane.showInputDialog(null, "How will you take?");
+			String withdrawText = JOptionPane.showInputDialog(null, "How much will you take?");
 			double withdraw = Double.parseDouble(withdrawText);
 			
 			double data = withdraw / 100;
 			
-			frameWork.addTot(data);
+			frameWork.subTot(data);
 			
-			JOptionPane.showMessageDialog(null, "You added " + data + "$ To the piggy bank.");
+			JOptionPane.showMessageDialog(null, "You Took " + data + "$ from the piggy bank.");
 			 } 
 		else 
 		{ // choice == NO_OPTION or CANCEL_OPTION

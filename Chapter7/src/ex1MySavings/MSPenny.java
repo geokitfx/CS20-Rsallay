@@ -24,7 +24,6 @@ public class MSPenny implements ActionListener {
 	        frameWork.addTot(data);
 			
 			JOptionPane.showMessageDialog(null, "You added " + data + "$ To the piggy bank.");
-			System.out.println("Total: "+ frameWork.getTotal());
 			 } 
 		else 
 		{ // choice == NO_OPTION or CANCEL_OPTION

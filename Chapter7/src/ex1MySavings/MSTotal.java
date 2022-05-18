@@ -23,7 +23,6 @@ public class MSTotal implements ActionListener {
 			NumberFormat money = NumberFormat.getCurrencyInstance();
 			
 			JOptionPane.showMessageDialog(null, "You have " + money.format(frameWork.getTotal()));
-			System.out.println("Total: "+ frameWork.getTotal());
 			 } 
 		else 
 		{ // choice == NO_OPTION or CANCEL_OPTION

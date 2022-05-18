@@ -1,5 +1,9 @@
 package adderEX8;
 
+//USE Adder.java to run program!
+//USE Adder.java to run program!
+//USE Adder.java to run program!
+
 public class GameMath 
 {
 	private int Trys;

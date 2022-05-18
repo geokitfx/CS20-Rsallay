@@ -3,7 +3,15 @@ package adderEX8;
 
 Program: Adder.java          Last Date of this Revision: 05, 18, 2022
 
-Purpose: The g
+Purpose: The Adder game prompts the player for the answer to an addition problem.
+		 The Adder game creates a problem from two randomly selected integers between 0 and 20.
+		 Adder allows the player three tries to enter a correct answer.
+		 If the correct answer is entered on the first try, the player is awarded 5 points.
+		 If the correct answer is entered on the second try, 3 points are awarded.
+		 The correct answer on the third try earns 1 point.
+		 If after three tries, the correct answer is still not entered, the player receives no points and the correct answer is displayed.
+		 The game continues until 999 is entered as an answer.
+		 At the end of the game Adder displays the player's Score.
 
 Author: Rowan Sallay, 
 School: CHHS
@@ -29,8 +37,7 @@ public class Adder {
 	    int b = (int) ((Math.random() * (max - min)) + min);
 			
 		System.out.println(a + " + " + b + " = ");
-		System.out.println("");
-		System.out.println(frameWork.getTrys()+" Trys");
+		System.out.println(frameWork.getTrys()+" Try's");
 		System.out.println(frameWork.getScore()+" Score");
 		@SuppressWarnings("resource")
 		Scanner input = new Scanner(System.in);
@@ -64,7 +71,7 @@ public class Adder {
 			frameWork.addScore(ScoreC);
 			frameWork.reset();
 		} else if (frameWork.getTrys() == 4) {
-			System.out.println("The correct awnser is : " + a + " + " + b + " = " + awn);
+			System.out.println("The correct answer is : " + a + " + " + b + " = " + awn);
 			frameWork.reset();
 		}
 		
@@ -81,13 +88,73 @@ public class Adder {
 
 /* Screen Dump
 
-Hello and welcome to Rowan's RandomNum application
-First enter a Minimum Value and then enter a Maximum Value.
-Minimum value: 
+14 + 14 = 
+ 
+0 Try's
+0 Score
+ 
+28
+6 + 4 = 
+ 
+0 Try's
+5 Score
+ 
 1
-Maximum value:
-10000
-Random Number is: 2831
-Program Finished, Thank you for using this Program.
+19 + 5 = 
+ 
+1 Try's
+5 Score
+ 
+24
+2 + 3 = 
+ 
+0 Try's
+8 Score
+ 
+1
+17 + 8 = 
+ 
+1 Try's
+8 Score
+ 
+1
+1 + 18 = 
+ 
+2 Try's
+8 Score
+ 
+19
+3 + 4 = 
+ 
+0 Try's
+9 Score
+ 
+1
+18 + 16 = 
+ 
+1 Try's
+9 Score
+ 
+1
+14 + 16 = 
+ 
+2 Try's
+9 Score
+ 
+1
+8 + 19 = 
+ 
+3 Try's
+9 Score
+ 
+1
+The correct answer is : 8 + 19 = 27
+9 + 19 = 
+ 
+0 Try's
+9 Score
+ 
+999
+Your score is: 9
 
 */

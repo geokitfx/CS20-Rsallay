@@ -1,11 +1,12 @@
 package ex1MySavings;
 /*
 
-Program: RandomNum.java          Last Date of this Revision: 03, 3, 2022
+Program: MySavingsGUI.java           Last Date of this Revision: 05, 18, 2022
 
-Purpose: Create a RandomNum application that prompts the user for two numbers. 
-		 The first is a minimum value and the second is a maximum value.
-		 RandomNum than displays an integer between the min and max values entered by the user.
+Purpose: Create a MySavings application that displays a menu of choices for entering
+ 		 Pennies, Nickels, Dimes and Quarters into a piggy bank and then prompts the users to make a selection.
+ 		 The MySavings application should include a PiggyBank Object that can add coins to the piggy bank,
+ 		 Remove coins, and return the total amount in the bank.
 
 Author: Rowan Sallay, 
 School: CHHS
@@ -92,13 +93,6 @@ public class MySavingsGUI {
 
 /* Screen Dump
 
-Hello and welcome to Rowan's RandomNum application
-First enter a Minimum Value and then enter a Maximum Value.
-Minimum value: 
-1
-Maximum value:
-10000
-Random Number is: 2831
-Program Finished, Thank you for using this Program.
+There is no screen dump for it is a program and i have no idea how to get one for it.
 
 */
