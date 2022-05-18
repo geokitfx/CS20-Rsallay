@@ -16,7 +16,7 @@ Course: Computer Programming 20
 
 import java.util.Scanner;
 
-public class RandomNum {
+public class Adder {
 	
 	public static void main(String[] args) 
 	{
@@ -31,14 +31,15 @@ public class RandomNum {
 	    int b = (int) ((Math.random() * (max - min)) + min);
 			
 		System.out.println(a + " + " + b + " = ");
-		System.out.println(frameWork.getTrys());
-		System.out.println(frameWork.getScore());
+		System.out.println(frameWork.getTrys()+" Trys");
+		System.out.println(frameWork.getScore()+" Score");
 		@SuppressWarnings("resource")
 		Scanner input = new Scanner(System.in);
 		int value = input.nextInt();
         
 		int awn = a + b;
 		int Try = 1;
+		int Success = 1;
 		
 		int ScoreA = 5;
 		int ScoreB = 3;
@@ -46,26 +47,33 @@ public class RandomNum {
 		
 		if (value == awn) 
 		{
-			frameWork.reset();
+			frameWork.addSuccess(Success);
 		} 
-		else 
+		else
 		{
 			frameWork.addTry(Try);
+			frameWork.addSuccess(Success);
 		}
 		
-		if (frameWork.getTrys() == 1) {
+		if (frameWork.getSuccess() == 1 && frameWork.getTrys() == 0) {
 			frameWork.addScore(ScoreA);
 			frameWork.reset();
-		} else if (frameWork.getTrys() == 2) {
+		} else if (frameWork.getSuccess() == 2 && frameWork.getTrys() == 1) {
 			frameWork.addScore(ScoreB);
 			frameWork.reset();
-		} else if (frameWork.getTrys() == 3) {
+		} else if (frameWork.getSuccess() == 3 && frameWork.getTrys() == 2) {
 			frameWork.addScore(ScoreC);
 			frameWork.reset();
 		} else if (frameWork.getTrys() == 4) {
+			System.out.println("The correct awnser is : " + a + " + " + b + " = " + awn);
+			frameWork.reset();
+		}
+		
+		if (value == 999) {
 			System.out.println("Your score is: " + frameWork.getScore());
 			end = end +1;
 		}
+		
 		}
 	}
         
