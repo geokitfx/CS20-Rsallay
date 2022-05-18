@@ -3,7 +3,7 @@ package adderEX8;
 
 Program: Adder.java          Last Date of this Revision: 05, 18, 2022
 
-Purpose: The 
+Purpose: The g
 
 Author: Rowan Sallay, 
 School: CHHS
@@ -29,7 +29,7 @@ public class Adder {
 	    int b = (int) ((Math.random() * (max - min)) + min);
 			
 		System.out.println(a + " + " + b + " = ");
-		System.out.println(" ");
+		System.out.println("");
 		System.out.println(frameWork.getTrys()+" Trys");
 		System.out.println(frameWork.getScore()+" Score");
 		@SuppressWarnings("resource")
