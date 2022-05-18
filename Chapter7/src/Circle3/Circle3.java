@@ -1,11 +1,10 @@
 package Circle3;
 /*
 
-Program: RandomNum.java          Last Date of this Revision: 03, 3, 2022
+Program: Circle3.java          Last Date of this Revision: 05, 18, 2022
 
-Purpose: Create a RandomNum application that prompts the user for two numbers. 
-		 The first is a minimum value and the second is a maximum value.
-		 RandomNum than displays an integer between the min and max values entered by the user.
+Purpose: Modify the Circle class to include a class method named [displayAreaFormula], as shown in the previous section.
+		 Modify existing client code to test the new method.
 
 Author: Rowan Sallay, 
 School: CHHS
@@ -37,13 +36,12 @@ public class Circle3 {
 
 /* Screen Dump
 
-Hello and welcome to Rowan's RandomNum application
-First enter a Minimum Value and then enter a Maximum Value.
-Minimum value: 
-1
-Maximum value:
-10000
-Random Number is: 2831
-Program Finished, Thank you for using this Program.
+Circle Radius: 3.0
+Circle circumference: 18.84955592153876
+The formula for the area of a circle is A = Pi * R * R
+ 
+Circle Radius: 5.0
+Circle circumference: 31.41592653589793
+The formula for the area of a circle is A = Pi * R * R
 
 */

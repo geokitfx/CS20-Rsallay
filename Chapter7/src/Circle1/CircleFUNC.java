@@ -1,8 +1,11 @@
 package Circle1;
 
+//USE Adder.java to run program!
+//USE Adder.java to run program!
+//USE Adder.java to run program!
+
 public class CircleFUNC 
 {
-	private static final double PI = 3.14;
 	private double radius;
 	//Tester Calls upon these "FUNCTIONS" to produce answer.
 	//Sorta Acts like an import "EXAMPLE = Scanner".
@@ -21,7 +24,7 @@ public class CircleFUNC
 	public double circumference()
 	{
 		double circCircumference;
-		circCircumference = PI * 2 * radius;
+		circCircumference = Math.PI * 2 * radius;
 		return(circCircumference);
 		
 	}

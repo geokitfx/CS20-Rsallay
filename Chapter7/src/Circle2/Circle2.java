@@ -1,11 +1,9 @@
 package Circle2;
 /*
 
-Program: RandomNum.java          Last Date of this Revision: 03, 3, 2022
+Program: Circle2.java          Last Date of this Revision: 05, 18, 2022
 
-Purpose: Create a RandomNum application that prompts the user for two numbers. 
-		 The first is a minimum value and the second is a maximum value.
-		 RandomNum than displays an integer between the min and max values entered by the user.
+Purpose: Modify the Circle class to include an overloaded constructor that accepts the radius of the Circle object, as shown in the previous section.
 
 Author: Rowan Sallay, 
 School: CHHS
@@ -35,13 +33,10 @@ public class Circle2 {
 
 /* Screen Dump
 
-Hello and welcome to Rowan's RandomNum application
-First enter a Minimum Value and then enter a Maximum Value.
-Minimum value: 
-1
-Maximum value:
-10000
-Random Number is: 2831
-Program Finished, Thank you for using this Program.
+Circle Radius: 3.0
+Circle circumference: 18.84955592153876
+ 
+Circle Radius: 5.0
+Circle circumference: 31.41592653589793
 
 */

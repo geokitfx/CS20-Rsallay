@@ -1,11 +1,10 @@
 package Circle4;
 /*
 
-Program: RandomNum.java          Last Date of this Revision: 03, 3, 2022
+Program: Circle4.java          Last Date of this Revision: 05, 18, 2022
 
-Purpose: Create a RandomNum application that prompts the user for two numbers. 
-		 The first is a minimum value and the second is a maximum value.
-		 RandomNum than displays an integer between the min and max values entered by the user.
+Purpose: Modify the Circle class to override the equals and toString methods, as shown in the previous section.
+		 Modify the existing client code to test the new methods.
 
 Author: Rowan Sallay, 
 School: CHHS
@@ -40,13 +39,12 @@ public class Circle4 {
 
 /* Screen Dump
 
-Hello and welcome to Rowan's RandomNum application
-First enter a Minimum Value and then enter a Maximum Value.
-Minimum value: 
-1
-Maximum value:
-10000
-Random Number is: 2831
-Program Finished, Thank you for using this Program.
+Objects are not equal
+ 
+Circle Radius: 1.0
+Circle circumference: 6.283185307179586
+ 
+Circle Radius: 5.0
+Circle circumference: 31.41592653589793
 
 */

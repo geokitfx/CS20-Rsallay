@@ -1,8 +1,11 @@
 package Circle3;
 
+//USE Adder.java to run program!
+//USE Adder.java to run program!
+//USE Adder.java to run program!
+
 public class CircleFUNC3 
 {
-	//private static final double PI = 3.14;
 	private double radius;
 	//Tester Calls upon these "FUNCTIONS" to produce answer.
 	//Sorta Acts like an import "EXAMPLE = Scanner".
