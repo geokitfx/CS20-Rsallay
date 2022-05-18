@@ -1,11 +1,9 @@
 package adderEX8;
 /*
 
-Program: RandomNum.java          Last Date of this Revision: 03, 3, 2022
+Program: Adder.java          Last Date of this Revision: 05, 18, 2022
 
-Purpose: Create a RandomNum application that prompts the user for two numbers. 
-		 The first is a minimum value and the second is a maximum value.
-		 RandomNum than displays an integer between the min and max values entered by the user.
+Purpose: The 
 
 Author: Rowan Sallay, 
 School: CHHS
@@ -31,6 +29,7 @@ public class Adder {
 	    int b = (int) ((Math.random() * (max - min)) + min);
 			
 		System.out.println(a + " + " + b + " = ");
+		System.out.println(" ");
 		System.out.println(frameWork.getTrys()+" Trys");
 		System.out.println(frameWork.getScore()+" Score");
 		@SuppressWarnings("resource")
