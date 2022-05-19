@@ -1,45 +1,44 @@
-2. Explain the difference between Method Declaration and the Method Body.
+1.
 
-The Declaration is where you put the Method Name, Access Level, Return Type and parameters, if any.
+	private double radius;
 
-The Body is the statements that implement a method.
+	public void setRadius(double newRadius)
+	{
+		radius = newRadius;  
+	}
+	
+	public double getRadius()
+	{
+		 return(radius);  
+	}
+	
+2. 
 
-3. What type of keyword is used to change the access level of a method?
+	The same as the Class name.
+	
+3.
 
-The public keyword is an access modifier, meaning that it is used to set the access level for classes, attributes, methods and constructors.
-a small list of keywords is private, private protected, protected, public, and, if left unspecified, "friendly".
+	Public means you can access it anywhere,
+	while private means you can only access it inside its own class.
+	
+4.
 
-4. What is another word used for describing the access level of a method?
+	It's invalid.
+	Circle dot = new Circle(2);
+	The 2 in Circle(2) should already set the radius to 2,
+	and unless the Circle Constructor has something that allows it to change it will break the code.
+	
+5. 
 
-visibility.
+	A: Roo
+	B: private int x;
+	C: getX()
+	D: setX(int z)
+	E: factor()
+	F: Roo
+	G: 5
+	
+6. 
 
-5. Explain the scope of each variable in the code below. (See page 143 in the java book)
-
-When the local variable is created inside a method, constructor, or block, their scope only remains within the method, block, or constructor.
-They are visible only within the method, constructor, or block. As you exit from the method or block then the scope of a local variable is destroyed.
-We cannot access local variables from outside the method, constructor, or block.
-
-6. Write a method declaration for each of the following descriptions: (See page 143 in the java book)
-
-public static void getVowels();
-if (string == A || E || I || O || U) {
-int string = 1
-}
-
-public static void extractDigit();
-if (digit >= 1) {
-int y = 1
-}
-
-public static void insertString();
-if (string == 1 && y == 1 ) {
-String t = "True";
-}
-
-7.
-
-The compiler distinguishes overloaded methods by their signatures,
-a combination of the method’s name and the number, types and order of its parameters, but not its return type.
-
-while coding java two or more methods may have the same name if they differ in parameters,
-not unless its a method-overload.
+	A class defines the variables for the state of an object and the methods for an objects behavior.
+	A object is a instance of a class and the object can store data and can perform actions and provide communication.
