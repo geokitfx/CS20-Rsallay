@@ -1,0 +1,44 @@
+1.
+
+	private double radius;
+
+	public void setRadius(double newRadius)
+	{
+		radius = newRadius;  
+	}
+	
+	public double getRadius()
+	{
+		 return(radius);  
+	}
+	
+2. 
+
+	The same as the Class name.
+	
+3.
+
+	Public means you can access it anywhere,
+	while private means you can only access it inside its own class.
+	
+4.
+
+	It's invalid.
+	Circle dot = new Circle(2);
+	The 2 in Circle(2) should already set the radius to 2,
+	and unless the Circle Constructor has something that allows it to change it will break the code.
+	
+5. 
+
+	A: Roo
+	B: private int x;
+	C: getX()
+	D: setX(int z)
+	E: factor()
+	F: Roo
+	G: 5
+	
+6. 
+
+	A class defines the variables for the state of an object and the methods for an objects behavior.
+	A object is a instance of a class and the object can store data and can perform actions and provide communication.
