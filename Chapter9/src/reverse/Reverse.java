@@ -39,22 +39,27 @@ public class Reverse {
 }
 
 /*
-How many Students?
-5
-Student Names?
-Wilbur
-Student Names?
-Techno
-Student Names?
-Dream
-Student Names?
-Tommy
-Student Names?
-Ranboo
-Student Roster
-Student 0: Wilbur
-Student 1: Techno
-Student 2: Dream
-Student 3: Tommy
-Student 4: Ranboo
+Countup
+Student 0
+Student 1
+Student 2
+Student 3
+Student 4
+Student 5
+Student 6
+Student 7
+Student 8
+Student 9
+ 
+Countdown
+Reverse 9
+Reverse 8
+Reverse 7
+Reverse 6
+Reverse 5
+Reverse 4
+Reverse 3
+Reverse 2
+Reverse 1
+Reverse 0
 */
